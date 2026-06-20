@@ -1,29 +1,46 @@
 /* RESET */
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
 .logo img{
     height:70px;
     width:auto;
     display:block;
 
-    filter:drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+    /* Fade Animation */
+    animation: logoFade 4s ease-in-out infinite;
 
-    animation: luxuryGlow 5s ease-in-out infinite;
+    /* Smooth Hover */
+    transition:all 0.4s ease;
 }
 
-@keyframes luxuryGlow{
+.logo img:hover{
+    transform:scale(1.05);
+    opacity:1;
+}
 
+/* Fade Effect */
+@keyframes logoFade{
     0%{
-        opacity:.75;
-        transform:translateY(0px);
+        opacity:0.65;
     }
 
     50%{
         opacity:1;
-        transform:translateY(-2px);
     }
 
     100%{
-        opacity:.75;
-        transform:translateY(0px);
+        opacity:0.65;
     }
 }
 
