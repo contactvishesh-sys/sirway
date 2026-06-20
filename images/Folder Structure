@@ -1,1 +1,20 @@
-
+images/
+│
+├── logo.png
+├── banner-fashion.png
+│
+├── product1.jpg
+├── product2.jpg
+├── product3.jpg
+├── product4.jpg
+│
+├── cat-men.jpg
+├── cat-women.jpg
+├── cat-shoes.jpg
+├── cat-bags.jpg
+├── cat-watch.jpg
+├── cat-beauty.jpg
+│
+├── blog1.jpg
+├── blog2.jpg
+└── blog3.jpg
