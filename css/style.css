@@ -1,23 +1,30 @@
 /* RESET */
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
 .logo img{
-    height:55px;
+    height:70px;
+    width:auto;
+    display:block;
+
+    filter:drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+
+    animation: luxuryGlow 5s ease-in-out infinite;
 }
 
-.logo span{
-    font-size:24px;
-    font-weight:700;
-    letter-spacing:2px;
-}
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+@keyframes luxuryGlow{
+
+    0%{
+        opacity:.75;
+        transform:translateY(0px);
+    }
+
+    50%{
+        opacity:1;
+        transform:translateY(-2px);
+    }
+
+    100%{
+        opacity:.75;
+        transform:translateY(0px);
+    }
 }
 
 body{
