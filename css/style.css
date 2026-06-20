@@ -13,16 +13,13 @@
 }
 
 .logo img{
-    height:70px;
-    width:245px;   /* 70 × 3.5 = 245 */
+    height:70px !important;
+    width:350px !important;
 
-    object-fit:contain;
+    object-fit:fill;
     display:block;
 
-    /* Fade Animation */
     animation:logoFade 4s ease-in-out infinite;
-
-    /* Smooth Hover */
     transition:all 0.4s ease;
 }
 
