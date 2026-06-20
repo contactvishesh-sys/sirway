@@ -13,10 +13,10 @@
 }
 
 .logo img{
-    height:70px !important;
-    width:350px !important;
+    height:70px;
+    width:245px;
 
-    object-fit:fill;
+    object-fit:contain;
     display:block;
 
     animation:logoFade 4s ease-in-out infinite;
