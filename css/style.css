@@ -394,3 +394,33 @@ header{
 }
 
 }
+.hero h1{
+    font-size:72px;
+    line-height:1.1;
+    color:#4b2354;
+}
+
+.hero h1 span{
+    color:#e26ab3;
+}
+
+.small-title{
+    color:#8e44ad;
+    font-weight:600;
+    letter-spacing:2px;
+}
+@media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-image{
+        margin-top:30px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+}
