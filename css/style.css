@@ -497,4 +497,25 @@ header{
     flex-direction:column;
     gap:20px;
 }
+.tag{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:180px;
+    height:52px;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    color:#8e44ad;
+    font-weight:700;
+    font-size:18px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+    margin-top:20px;
+    margin-bottom:30px;
+}
     
