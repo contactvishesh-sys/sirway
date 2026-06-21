@@ -113,91 +113,104 @@ nav ul li a:hover{
 
 /* HERO */
 
-.hero{
-    width:100%;
-    min-height:88vh;
+/* HERO SECTION */
 
+.hero{
     display:flex;
     justify-content:space-between;
-    align-items:center;
+    align-items:flex-end;
 
-    padding:0 6%;
+    min-height:82vh;
+
+    padding:40px 6% 0 6%;
 
     background:linear-gradient(
-        to right,
-        #f7e8ef,
-        #efdce9,
-        #e9d8f7
+        90deg,
+        #f4e5ec 0%,
+        #efdce8 45%,
+        #eadbf7 100%
     );
+
+    overflow:hidden;
 }
+
+/* LEFT SIDE */
 
 .hero-left{
-    width:50%;
+    width:45%;
+    padding-bottom:80px;
 }
 
-.hero-right{
-    width:50%;
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-}
-
-.hero-right img{
-    width:900px;
-    display:block;
-}
+/* NEW ARRIVALS */
 
 .tag{
-    background:#fff;
-    color:#7d4ab3;
-    font-weight:600;
-
-    padding:10px 18px;
-
-    border-radius:8px;
-
     display:inline-block;
 
-    margin-bottom:20px;
-}
+    background:#fff;
+    color:#8a5db7;
 
-.hero h1{
-    font-size:95px;
-    line-height:0.95;
+    font-weight:700;
+
+    padding:12px 28px;
+
+    border-radius:12px;
+
+    margin-top:25px;
     margin-bottom:25px;
-    color:#43154f;
+
+    font-size:16px;
 }
 
-.hero h1 span{
-    color:#e46cb7;
+/* HEADING */
+
+.hero-left h1{
+    font-size:96px;
+    line-height:0.95;
+    margin-bottom:35px;
+
+    color:#4f1e67;
+
+    font-family:Georgia, serif;
+}
+
+.hero-left h1 span{
+    color:#df74bc;
     font-style:italic;
 }
 
-.hero p{
-    font-size:28px;
+/* DESCRIPTION */
+
+.hero-left p{
+    font-size:24px;
+    line-height:1.7;
+
     color:#333;
-    line-height:1.6;
-    margin-bottom:35px;
+
+    max-width:600px;
+
+    margin-bottom:40px;
 }
-/* Circle behind model */
+.hero-right{
+    width:55%;
 
-.hero-content{
-    flex:1;
-    max-width:650px;
-    z-index:2;
+    display:flex;
+
+    justify-content:flex-end;
+    align-items:flex-end;
+
+    margin-right:-120px;
 }
 
-.hero-image{
-    flex:1;
-    text-align:right;
-    z-index:2;
-}
+/* MODEL IMAGE */
 
-.hero-image img{
-    width:100%;
-    max-width:750px;
+.hero-right img{
+    width:1050px;
 
-    animation:bannerFloat 6s ease-in-out infinite;
+    max-width:none;
+
+    display:block;
+
+    object-fit:contain;
 }
 
 /* Badge */
