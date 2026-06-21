@@ -109,18 +109,44 @@ nav ul li a:hover{
 /* HERO */
 
 .hero{
-    min-height:85vh;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:80px 8%;
-    background:
-    linear-gradient(
-    135deg,
-    #ff3e6c,
-    #6c63ff
+    padding:60px 5%;
+    background:linear-gradient(
+        135deg,
+        #ffe4f1 0%,
+        #f5d8ff 50%,
+        #e9d7ff 100%
     );
-    color:#fff;
+    overflow:hidden;
+}
+.hero-image{
+    flex:1.2;
+    text-align:right;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:850px;
+    height:auto;
+    display:block;
+
+    animation:bannerFloat 6s ease-in-out infinite;
+}
+@keyframes bannerFloat{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
 }
 
 .hero-content{
@@ -146,27 +172,19 @@ nav ul li a:hover{
     margin-top:30px;
 }
 
-.btn-dark,
-.btn-light{
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:50px;
-    margin-right:15px;
-    display:inline-block;
-}
-
 .btn-dark{
-    background:#111;
+    background:#8e44ad;
     color:#fff;
 }
 
-.btn-light{
-    background:#fff;
-    color:#111;
+.btn-dark:hover{
+    background:#6c3483;
 }
 
-.hero-image img{
-    width:450px;
+.btn-light{
+    border:2px solid #b57edc;
+    color:#8e44ad;
+    background:#fff;
 }
 
 /* SECTION */
