@@ -136,15 +136,24 @@ nav ul li a:hover{
 }
 
 .hero-right{
-    width:50%;
+    width:55%;
+
     display:flex;
     justify-content:flex-end;
     align-items:flex-end;
+
+    margin-right:-120px;
+    margin-bottom:-20px;
 }
 
 .hero-right img{
-    width:900px;
+    width:1050px;
+    max-width:none;
+
     display:block;
+    object-fit:contain;
+
+    margin-bottom:-60px;
 }
 
 /* HEADING */
