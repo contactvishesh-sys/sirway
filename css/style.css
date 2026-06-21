@@ -165,27 +165,6 @@ nav ul li a:hover{
 }
 /* Circle behind model */
 
-.hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:400px;
-    height:400px;
-
-    right:6%;
-    top:50%;
-
-    transform:translateY(-50%);
-
-    border-radius:50%;
-
-    background:rgba(185,125,255,.18);
-
-    z-index:0;
-}
-
 .hero-content{
     flex:1;
     max-width:650px;
