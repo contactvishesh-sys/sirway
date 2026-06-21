@@ -113,52 +113,38 @@ nav ul li a:hover{
 
 /* HERO */
 
-/* HERO SECTION */
-
 .hero{
+    width:100%;
+    min-height:88vh;
+
     display:flex;
     justify-content:space-between;
-    align-items:flex-end;
+    align-items:center;
 
-    min-height:82vh;
-
-    padding:40px 6% 0 6%;
+    padding:0 6%;
 
     background:linear-gradient(
-        90deg,
-        #f4e5ec 0%,
-        #efdce8 45%,
-        #eadbf7 100%
+        to right,
+        #f7e8ef,
+        #efdce9,
+        #e9d8f7
     );
-
-    overflow:hidden;
 }
-
-/* LEFT SIDE */
 
 .hero-left{
-    width:45%;
-    padding-bottom:80px;
+    width:50%;
 }
 
-/* NEW ARRIVALS */
+.hero-right{
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
 
-.tag{
-    display:inline-block;
-
-    background:#fff;
-    color:#8a5db7;
-
-    font-weight:700;
-
-    padding:12px 28px;
-
-    border-radius:12px;
-
-    margin-top:25px;
-    margin-bottom:25px;
-
-    font-size:16px;
+.hero-right img{
+    width:900px;
+    display:block;
 }
 
 /* HEADING */
