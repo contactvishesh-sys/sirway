@@ -132,7 +132,7 @@ nav ul li a:hover{
 }
 
 .hero-left{
-    width:50%;
+    padding-top:30px;
 }
 
 .hero-right{
@@ -154,6 +154,29 @@ nav ul li a:hover{
     object-fit:contain;
 
     margin-bottom:-60px;
+}
+/* NEW ARRIVALS BADGE */
+
+.tag{
+    display:inline-block;
+
+    background:#ffffff;
+
+    color:#8a5db7;
+
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:1px;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+
+    text-transform:uppercase;
+
+    margin-bottom:30px;
 }
 
 /* HEADING */
@@ -506,25 +529,6 @@ header{
     flex-direction:column;
     gap:20px;
 }
-.tag{
-    display:flex;
-    align-items:center;
-    justify-content:center;
 
-    width:180px;
-    height:52px;
-
-    background:#fff;
-
-    border-radius:12px;
-
-    color:#8e44ad;
-    font-weight:700;
-    font-size:18px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.05);
-
-    margin-top:20px;
-    margin-bottom:30px;
-}
+    
     
