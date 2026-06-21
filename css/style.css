@@ -13,15 +13,9 @@
 }
 
 .logo img{
-
-    height:75px;
-    width:350px;
-
-    object-fit:contain;
-
-    animation:logoFade 4s ease-in-out infinite;
+    height:70px;
+    width:auto;
 }
-
     /* Fade Animation */
     animation: logoFade 4s ease-in-out infinite;
 
@@ -61,44 +55,114 @@
 /* HEADER */
 
 header{
-
+    height:90px;
+    padding:0 5%;
     display:flex;
-    justify-content:space-between;
     align-items:center;
-
-    padding:20px 8%;
-
-    background:rgba(255,255,255,.85);
-
-    backdrop-filter:blur(12px);
-
+    justify-content:space-between;
+    background:#f8edf5;
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:999;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#e96ab5;
+}
+
+.search-box input{
+    width:380px;
+    padding:14px 20px;
+    border:none;
+    border-radius:10px;
+    background:#fff;
+    font-size:15px;
+}
+
+.icons i{
+    font-size:24px;
+    margin-left:20px;
+    color:#4c2a56;
 }
 
 /* HERO */
 
 .hero{
+    min-height:85vh;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
 
-    padding:60px 8%;
-
-    min-height:85vh;
+    padding:60px 6%;
 
     background:linear-gradient(
-        90deg,
-        #fde8ef 0%,
-        #f8d8ec 40%,
-        #ead8ff 100%
+    90deg,
+    #f9e7ef 0%,
+    #f6d9e9 50%,
+    #e7d2f5 100%
     );
-
-    overflow:hidden;
-    position:relative;
 }
 
+.hero-left{
+    width:48%;
+}
+
+.hero-right{
+    width:50%;
+    text-align:right;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:750px;
+}
+
+.tag{
+    background:#fff;
+    color:#7d4ab3;
+    font-weight:600;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    display:inline-block;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:95px;
+    line-height:0.95;
+    margin-bottom:25px;
+    color:#43154f;
+}
+
+.hero h1 span{
+    color:#e46cb7;
+    font-style:italic;
+}
+
+.hero p{
+    font-size:28px;
+    color:#333;
+    line-height:1.6;
+    margin-bottom:35px;
+}
 /* Circle behind model */
 
 .hero::before{
@@ -200,90 +264,60 @@ header{
 /* Brands */
 
 .brand-box{
-
-    display:flex;
-
-    gap:25px;
-
-    align-items:center;
-
     background:#fff;
 
-    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:40px;
 
-    border-radius:15px;
+    padding:18px 30px;
+
+    border-radius:12px;
 
     width:fit-content;
 
     margin-bottom:35px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 
-.brand-box div{
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
 
-    font-weight:600;
-
-    color:#333;
+.brand img{
+    width:40px;
+    height:40px;
 }
 
 /* Buttons */
 
 .hero-buttons{
-
     display:flex;
-
     gap:20px;
 }
 
-.btn-dark{
-
-    background:#8e44ad;
-
+.btn-primary{
+    background:#8b45c6;
     color:#fff;
-
+    padding:18px 35px;
+    border-radius:8px;
     text-decoration:none;
-
-    padding:18px 40px;
-
-    border-radius:10px;
-
     font-weight:600;
-
-    transition:.3s;
 }
 
-.btn-dark:hover{
-
-    transform:translateY(-3px);
-
-    background:#6c3483;
+.btn-primary:hover{
+    background:#6d2fa4;
 }
 
-.btn-light{
-
-    border:2px solid #8e44ad;
-
-    color:#8e44ad;
-
+.btn-secondary{
+    border:2px solid #8b45c6;
+    color:#8b45c6;
+    padding:18px 35px;
+    border-radius:8px;
     text-decoration:none;
-
-    padding:18px 40px;
-
-    border-radius:10px;
-
     font-weight:600;
-
-    background:white;
-
-    transition:.3s;
-}
-
-.btn-light:hover{
-
-    background:#8e44ad;
-
-    color:white;
+    background:#fff;
 }
 
 /* SECTION */
@@ -469,26 +503,4 @@ header{
     flex-direction:column;
     gap:20px;
 }
-
-/* FEATURE STRIP BELOW BANNER */
-    .feature-strip{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    padding:30px 8%;
-
-    background:#f4e6fa;
-
-    text-align:center;
-}
-
-.feature{
-
-    font-size:18px;
-
-    font-weight:600;
-
-    color:#5d3a73;
-}
+    
