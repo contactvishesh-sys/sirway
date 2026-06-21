@@ -105,7 +105,7 @@ nav ul li a:hover{
     align-items:center;
     justify-content:space-between;
 
-    padding:20px 6% 0;   /* reduced top padding */
+    padding:22px 6% 0;   /* reduced top padding */
     min-height:78vh;
 
     background:linear-gradient(
