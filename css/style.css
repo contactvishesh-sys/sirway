@@ -13,9 +13,14 @@
 }
 
 .logo img{
-    height:70px;
-    width:auto;
-    display:block;
+
+    height:75px;
+    width:350px;
+
+    object-fit:contain;
+
+    animation:logoFade 4s ease-in-out infinite;
+}
 
     /* Fade Animation */
     animation: logoFade 4s ease-in-out infinite;
@@ -56,60 +61,23 @@
 /* HEADER */
 
 header{
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:20px 8%;
-    background:#fff;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(12px);
+
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);
-}
-
-.logo{
-    font-size:32px;
-    font-weight:700;
-}
-
-.logo .pink{
-    color:#ff3e6c;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:#111;
-    font-weight:500;
-}
-
-nav ul li a:hover{
-    color:#ff3e6c;
-}
-
-.search-box input{
-    width:300px;
-    padding:12px;
-    border:none;
-    background:#f5f5f5;
-    border-radius:30px;
-}
-
-.icons i{
-    margin-left:20px;
-    cursor:pointer;
-    font-size:20px;
 }
 
 /* HERO */
-/* =========================
-   HERO SECTION
-========================= */
 
 .hero{
     display:flex;
@@ -502,4 +470,25 @@ header{
     gap:20px;
 }
 
+/* FEATURE STRIP BELOW BANNER */
+    .feature-strip{
 
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    padding:30px 8%;
+
+    background:#f4e6fa;
+
+    text-align:center;
+}
+
+.feature{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#5d3a73;
+}
