@@ -289,39 +289,69 @@ nav ul li a:hover{
     margin-bottom:30px;
 }
 
-/* Brands */
+/* ==========================
+   SHOPPING BRANDS
+========================== */
 
 .brand-box{
-    background:#fff;
 
     display:flex;
     align-items:center;
-    gap:40px;
+    gap:18px;
 
-    padding:18px 30px;
+    background:#ffffff;
 
-    border-radius:12px;
+    padding:15px 22px;
 
-    width:fit-content;
+    border-radius:18px;
 
-    margin-bottom:35px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    width:max-content;
+
+    margin-bottom:40px;
 }
 
 .brand{
+
     display:flex;
     align-items:center;
     gap:10px;
+
+    padding:10px 16px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.brand:hover{
+
+    background:#f7eefc;
+
+    transform:translateY(-3px);
 }
 
 .brand img{
-    width:40px;
-    height:40px;
-}
 
-.brand img{
-    height:40px;
+    height:34px;
+
     width:auto;
+
     object-fit:contain;
+
+    display:block;
+}
+
+.brand span{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#444;
 }
 
 /* Buttons */
