@@ -137,26 +137,6 @@ nav ul li a:hover{
     padding-top:30px;
 }
 
-.hero-right{
-    width:55%;
-
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-
-    margin-right:-120px;
-    margin-bottom:-20px;
-}
-
-.hero-right img{
-    width:1050px;
-    max-width:none;
-
-    display:block;
-    object-fit:contain;
-
-    margin-bottom:-50px;
-}
 /* NEW ARRIVALS BADGE */
 
 .tag{
@@ -208,23 +188,23 @@ nav ul li a:hover{
 
     max-width:600px;
 
-    margin-bottom:40px;
+    margin-bottom:-10px;
 }
 .hero-right{
-    width:55%;
+    width:100%;
 
     display:flex;
 
     justify-content:flex-end;
     align-items:flex-end;
 
-    margin-right:-160px;
+    margin-right:-40px;
 }
 
 /* MODEL IMAGE */
 
 .hero-right img{
-    width:1050px;
+    width:780px;
 
     max-width:none;
 
