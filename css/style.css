@@ -198,13 +198,14 @@ nav ul li a:hover{
     justify-content:flex-end;
     align-items:flex-end;
 
-    margin-right:-40px;
+    margin-right:0px;
+    margin-bottom:0px;
 }
 
 /* MODEL IMAGE */
 
 .hero-right img{
-    width:780px;
+    width:900px;
 
     max-width:none;
 
