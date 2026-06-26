@@ -1,3 +1,6 @@
+/* Part 1 */
+
+
 /* ==========================
 TRENDING PICKS
 ========================== */
@@ -124,3 +127,205 @@ TRENDING PICKS
     font-weight:600;
 
 }
+/* Part 2 */
+/*==========================================
+FEATURED PRODUCTS
+==========================================*/
+
+.featured-products{
+
+    padding:110px 7%;
+
+    background:#fafafa;
+
+}
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+}
+
+.product{
+
+    background:white;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.product:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.product-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.product:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.discount{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    background:#ff3b7d;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.product-info{
+
+    padding:28px;
+
+}
+
+.product-info h3{
+
+    font-size:26px;
+
+    margin-bottom:10px;
+
+    color:#43225a;
+
+}
+
+.product-info p{
+
+    color:#666;
+
+    margin-bottom:18px;
+
+}
+
+.rating{
+
+    color:#ffbf00;
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+}
+
+.price{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#43225a;
+
+    margin-bottom:20px;
+
+}
+
+.price span{
+
+    margin-left:10px;
+
+    color:#999;
+
+    text-decoration:line-through;
+
+    font-size:20px;
+
+}
+
+.stores{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:28px;
+
+}
+
+.stores img{
+
+    height:28px;
+
+    width:auto;
+
+    object-fit:contain;
+
+    opacity:.85;
+
+}
+
+.buy-btn{
+
+    display:block;
+
+    text-align:center;
+
+    background:linear-gradient(90deg,#8f49d8,#d96fc2);
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.buy-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
