@@ -121,3 +121,144 @@ window.addEventListener("load", () => {
     heroImage.classList.add("show");
 
 });
+
+/*=========================================
+        LIVE SEARCH
+=========================================*/
+
+const searchInput = document.querySelector(".search-box input");
+
+if (searchInput) {
+
+    searchInput.addEventListener("keyup", function () {
+
+        const value = this.value.toLowerCase();
+
+        document.querySelectorAll(
+            ".collection-card,.product,.editor-card"
+        ).forEach(card => {
+
+            const text = card.innerText.toLowerCase();
+
+            if (text.indexOf(value) > -1) {
+
+                card.style.display = "";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+}
+
+/*=========================================
+        MOBILE MENU
+=========================================*/
+
+const navbar = document.querySelector(".nav-links");
+
+const menuBtn = document.createElement("div");
+
+menuBtn.className = "menu-toggle";
+
+menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+document.querySelector(".navbar").prepend(menuBtn);
+
+menuBtn.addEventListener("click", () => {
+
+    navbar.classList.toggle("active");
+
+});
+
+/*=========================================
+        NEWSLETTER FORM
+=========================================*/
+
+const form = document.querySelector(".club-right form");
+
+if(form){
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name=this.querySelector('input[type="text"]');
+
+const email=this.querySelector('input[type="email"]');
+
+if(name.value.trim()==="" || email.value.trim()===""){
+
+alert("Please fill all fields.");
+
+return;
+
+}
+
+alert("Welcome to SirWay Club!");
+
+this.reset();
+
+});
+
+}
+
+/*=========================================
+        BACK TO TOP
+=========================================*/
+
+const backTop=document.querySelector(".back-top");
+
+if(backTop){
+
+backTop.addEventListener("click",function(e){
+
+e.preventDefault();
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
+
+/*=========================================
+        RIPPLE EFFECT
+=========================================*/
+
+document.querySelectorAll("button,.btn-primary,.btn-secondary,.buy-btn")
+.forEach(button=>{
+
+button.addEventListener("click",function(e){
+
+const circle=document.createElement("span");
+
+circle.classList.add("ripple");
+
+const rect=this.getBoundingClientRect();
+
+circle.style.left=e.clientX-rect.left+"px";
+
+circle.style.top=e.clientY-rect.top+"px";
+
+this.appendChild(circle);
+
+setTimeout(()=>{
+
+circle.remove();
+
+},600);
+
+});
+
+});
