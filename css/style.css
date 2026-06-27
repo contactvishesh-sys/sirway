@@ -1396,3 +1396,75 @@ cursor:pointer;
 margin:0 15px;
 
 }
+
+/*=========================================
+        TOAST
+=========================================*/
+
+#toast{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+background:#222;
+
+color:#fff;
+
+padding:15px 25px;
+
+border-radius:10px;
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+transform:translateY(100px);
+
+opacity:0;
+
+transition:.4s;
+
+z-index:99999;
+
+}
+
+#toast.show{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+#toast i{
+
+color:#7c3aed;
+
+}
+
+/*=========================================
+        ACTIVE MENU
+=========================================*/
+
+.nav-links a.active{
+
+color:#7c3aed;
+
+font-weight:600;
+
+}
+
+/*=========================================
+        SMOOTH SCROLL
+=========================================*/
+
+html{
+
+scroll-behavior:smooth;
+
+}
