@@ -435,3 +435,220 @@ color:#7c3aed;
 margin:15px 0;
 
 }
+
+/*=========================================
+SORT BAR
+==========================================*/
+
+.sort-section{
+
+padding:30px 0;
+
+background:white;
+
+}
+
+.sort-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.sort-container select{
+
+padding:14px 20px;
+
+border-radius:12px;
+
+border:1px solid #ddd;
+
+font-size:15px;
+
+cursor:pointer;
+
+}
+
+
+/*=========================================
+PAGINATION
+==========================================*/
+
+.pagination{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+padding:70px 0;
+
+}
+
+.pagination a{
+
+width:50px;
+
+height:50px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+background:#f5effc;
+
+border-radius:50%;
+
+font-weight:600;
+
+color:#7c3aed;
+
+transition:.3s;
+
+}
+
+.pagination a:hover,
+
+.pagination .active{
+
+background:#7c3aed;
+
+color:white;
+
+}
+
+
+/*=========================================
+RECENT PRODUCTS
+==========================================*/
+
+.recent-products{
+
+padding:120px 0;
+
+background:white;
+
+}
+
+.recent-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.recent-card{
+
+background:#faf7fb;
+
+padding:20px;
+
+border-radius:22px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.recent-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.recent-card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+margin-bottom:18px;
+
+}
+
+.recent-card h4{
+
+margin-bottom:10px;
+
+color:#2b2133;
+
+}
+
+.recent-card span{
+
+color:#7c3aed;
+
+font-weight:700;
+
+font-size:20px;
+
+}
+
+
+/*=========================================
+SHOP CTA
+==========================================*/
+
+.shop-cta{
+
+padding:120px 0;
+
+background:linear-gradient(135deg,#7c3aed,#d067b5);
+
+text-align:center;
+
+color:white;
+
+}
+
+.shop-cta h2{
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+.shop-cta p{
+
+max-width:700px;
+
+margin:auto;
+
+margin-bottom:40px;
+
+font-size:20px;
+
+line-height:1.8;
+
+}
+
+.shop-cta .btn-primary{
+
+background:white;
+
+color:#7c3aed;
+
+}
+
+.shop-cta .btn-primary:hover{
+
+background:#f3ebfb;
+
+}
