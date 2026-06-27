@@ -390,3 +390,490 @@ SOCIAL ICONS
     color:#fff;
 
 }
+
+/*======================================================
+COMMON CARD
+======================================================*/
+
+.card{
+    background:#ffffff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:all .35s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 22px 50px rgba(0,0,0,.14);
+}
+
+
+/*======================================================
+CATEGORY BADGE
+======================================================*/
+
+.category-tag{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:8px 18px;
+
+    background:#8B5CF6;
+    color:#fff;
+
+    border-radius:50px;
+
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.6px;
+
+}
+
+
+/*======================================================
+DISCOUNT BADGE
+======================================================*/
+
+.discount{
+
+    position:absolute;
+
+    top:18px;
+    left:18px;
+
+    background:#ef4444;
+    color:#fff;
+
+    padding:8px 14px;
+
+    border-radius:40px;
+
+    font-size:12px;
+    font-weight:700;
+
+}
+
+
+/*======================================================
+RATING
+======================================================*/
+
+.rating{
+
+    display:flex;
+    align-items:center;
+    gap:4px;
+
+    color:#F59E0B;
+
+    font-size:15px;
+
+    margin:12px 0;
+
+}
+
+
+/*======================================================
+PRICE
+======================================================*/
+
+.price{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.price span{
+
+    font-size:16px;
+
+    color:#999;
+
+    text-decoration:line-through;
+
+}
+
+
+/*======================================================
+COLLECTION CARD
+======================================================*/
+
+.collection-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    cursor:pointer;
+
+    transition:.4s ease;
+
+}
+
+.collection-card img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.6s;
+
+}
+
+.collection-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.collection-overlay{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    padding:28px;
+
+    color:#fff;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.88)
+    );
+
+}
+
+.collection-overlay h3{
+
+    margin:14px 0;
+
+    font-size:24px;
+
+}
+
+.collection-overlay a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+/*======================================================
+CATEGORY CARD
+======================================================*/
+
+.category-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.category-card img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.category-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.category-name{
+
+    position:absolute;
+
+    left:50%;
+    bottom:24px;
+
+    transform:translateX(-50%);
+
+    background:rgba(255,255,255,.95);
+
+    padding:14px 30px;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.category-card:hover .category-name{
+
+    background:#8B5CF6;
+
+    color:#fff;
+
+}
+
+
+/*======================================================
+BRAND CARD
+======================================================*/
+
+.brand-card{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.brand-card img{
+
+    max-width:120px;
+
+    filter:grayscale(100%);
+
+    transition:.35s;
+
+}
+
+.brand-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.brand-card:hover img{
+
+    filter:none;
+
+}
+
+
+/*======================================================
+EDITOR CARD
+======================================================*/
+
+.editor-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.editor-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.editor-card img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.editor-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.editor-content{
+
+    padding:24px;
+
+}
+
+.editor-content span{
+
+    color:#8B5CF6;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.editor-content h3{
+
+    margin:12px 0;
+
+    font-size:22px;
+
+}
+
+
+/*======================================================
+PRODUCT CARD
+======================================================*/
+
+.product{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.product:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.product-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.product:hover .product-image img{
+
+    transform:scale(1.08);
+
+}
+
+.product-info{
+
+    padding:25px;
+
+}
+
+.product-info h3{
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+.product-info p{
+
+    color:#777;
+
+    margin-bottom:12px;
+
+}
+
+.stores{
+
+    display:flex;
+
+    gap:12px;
+
+    margin:20px 0;
+
+}
+
+.stores img{
+
+    width:40px;
+
+    height:40px;
+
+    object-fit:contain;
+
+}
+
+
+/*======================================================
+BUY BUTTON
+======================================================*/
+
+.buy-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:#8B5CF6;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.buy-btn:hover{
+
+    background:#6D28D9;
+
+}
