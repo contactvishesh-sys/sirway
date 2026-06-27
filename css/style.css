@@ -1012,3 +1012,41 @@ Fade Animation
     }
 
 }
+
+/* Sticky Header */
+
+.header.sticky{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+
+    z-index:9999;
+
+    animation:slideDown .4s ease;
+
+}
+
+@keyframes slideDown{
+
+    from{
+
+        transform:translateY(-100%);
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+    }
+
+}
