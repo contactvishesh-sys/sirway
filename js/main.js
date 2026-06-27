@@ -311,6 +311,8 @@ window.addEventListener("scroll", () => {
         WISHLIST
 =========================================*/
 
+let wishlistCount=0;
+
 document.querySelectorAll(".wishlist-btn").forEach(btn=>{
 
 btn.addEventListener("click",(e)=>{
@@ -319,11 +321,15 @@ e.preventDefault();
 
 const icon=btn.querySelector("i");
 
-icon.classList.toggle("fa-regular");
-
 icon.classList.toggle("fa-solid");
 
+icon.classList.toggle("fa-regular");
+
 icon.classList.toggle("active-heart");
+
+wishlistCount++;
+
+showToast("Added to Wishlist ❤️");
 
 });
 
@@ -336,18 +342,50 @@ icon.classList.toggle("active-heart");
 
 const themeBtn=document.getElementById("theme-toggle");
 
-if(themeBtn){
+if(localStorage.getItem("theme")==="dark"){
+
+document.body.classList.add("dark-mode");
+
+themeBtn.innerHTML='<i class="fa-solid fa-sun"></i>';
+
+}
 
 themeBtn.addEventListener("click",()=>{
 
 document.body.classList.toggle("dark-mode");
 
-const icon=themeBtn.querySelector("i");
+if(document.body.classList.contains("dark-mode")){
 
-icon.classList.toggle("fa-moon");
+localStorage.setItem("theme","dark");
 
-icon.classList.toggle("fa-sun");
+themeBtn.innerHTML='<i class="fa-solid fa-sun"></i>';
+
+}else{
+
+localStorage.setItem("theme","light");
+
+themeBtn.innerHTML='<i class="fa-solid fa-moon"></i>';
+
+}
 
 });
+/*=========================================
+        TOAST FUNCTION
+=========================================*/
+
+const toast=document.getElementById("toast");
+const toastMessage=document.getElementById("toast-message");
+
+function showToast(message){
+
+toastMessage.innerText=message;
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2500);
 
 }
