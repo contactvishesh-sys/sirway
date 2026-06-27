@@ -273,3 +273,278 @@ margin-top:40px;
 margin-bottom:40px;
 
 }
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+/*=========================================
+        RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#faf8fc;
+    color:#2b2133;
+    overflow-x:hidden;
+    line-height:1.6;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button,
+input,
+select{
+
+    font-family:inherit;
+
+}
+
+/*=========================================
+        COLORS
+=========================================*/
+
+:root{
+
+--primary:#7c3aed;
+--primary-light:#a855f7;
+--secondary:#d067b5;
+
+--text:#2b2133;
+--text-light:#6b7280;
+
+--white:#ffffff;
+
+--bg:#faf8fc;
+--card:#ffffff;
+
+--border:#ece7f5;
+
+--shadow:0 12px 35px rgba(124,58,237,.08);
+
+--radius:22px;
+
+--transition:.35s ease;
+
+}
+
+/*=========================================
+        CONTAINER
+=========================================*/
+
+.container{
+
+width:min(1280px,92%);
+margin:auto;
+
+}
+
+/*=========================================
+        SECTION
+=========================================*/
+
+section{
+
+padding:90px 0;
+
+}
+
+/*=========================================
+        HEADINGS
+=========================================*/
+
+h1{
+
+font-family:'Playfair Display',serif;
+font-size:64px;
+line-height:1.1;
+
+}
+
+h2{
+
+font-family:'Playfair Display',serif;
+font-size:46px;
+margin-bottom:18px;
+
+}
+
+h3{
+
+font-size:28px;
+
+}
+
+p{
+
+color:var(--text-light);
+
+}
+
+/*=========================================
+        BUTTONS
+=========================================*/
+
+.btn-primary{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:16px 34px;
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+color:#fff;
+
+border-radius:999px;
+
+font-weight:600;
+
+transition:var(--transition);
+
+box-shadow:var(--shadow);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-4px);
+
+}
+
+.btn-outline{
+
+display:inline-flex;
+
+padding:16px 34px;
+
+border:2px solid var(--primary);
+
+border-radius:999px;
+
+color:var(--primary);
+
+transition:var(--transition);
+
+}
+
+.btn-outline:hover{
+
+background:var(--primary);
+
+color:white;
+
+}
+
+/*=========================================
+        SECTION HEADING
+=========================================*/
+
+.section-heading{
+
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.section-tag{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#efe8fb;
+
+color:var(--primary);
+
+border-radius:999px;
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+margin-bottom:18px;
+
+text-transform:uppercase;
+
+}
+
+/*=========================================
+        CARDS
+=========================================*/
+
+.card{
+
+background:var(--card);
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+transition:var(--transition);
+
+overflow:hidden;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+/*=========================================
+        UTILITIES
+=========================================*/
+
+.text-center{
+
+text-align:center;
+
+}
+
+.mt-40{
+
+margin-top:40px;
+
+}
+
+.mb-40{
+
+margin-bottom:40px;
+
+}
