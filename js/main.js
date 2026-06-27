@@ -389,3 +389,4 @@ toast.classList.remove("show");
 },2500);
 
 }
+console.log("SirWay v1 Loaded Successfully");
