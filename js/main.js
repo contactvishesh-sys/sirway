@@ -1,57 +1,77 @@
-// Sticky Navbar Effect
+/*=========================================
+    SIRWAY MAIN JAVASCRIPT
+=========================================*/
 
-window.addEventListener("scroll", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const header = document.querySelector("header");
+    /*==============================
+      Sticky Header
+    ==============================*/
 
-    if(window.scrollY > 50){
-        header.style.boxShadow =
-        "0 5px 20px rgba(0,0,0,.15)";
-    }else{
-        header.style.boxShadow =
-        "0 2px 10px rgba(0,0,0,.05)";
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 80) {
+
+            header.classList.add("sticky");
+
+        } else {
+
+            header.classList.remove("sticky");
+
+        }
+
+    });
+
+    /*==============================
+      Smooth Scroll
+    ==============================*/
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+        link.addEventListener("click", function(e) {
+
+            const target = document.querySelector(this.getAttribute("href"));
+
+            if(target){
+
+                e.preventDefault();
+
+                target.scrollIntoView({
+
+                    behavior:"smooth"
+
+                });
+
+            }
+
+        });
+
+    });
+
+    /*==============================
+      Back To Top
+    ==============================*/
+
+    const backTop = document.querySelector(".back-top");
+
+    if(backTop){
+
+        backTop.addEventListener("click",(e)=>{
+
+            e.preventDefault();
+
+            window.scrollTo({
+
+                top:0,
+
+                behavior:"smooth"
+
+            });
+
+        });
+
     }
-
-});
-
-// Newsletter Demo
-
-document.addEventListener("DOMContentLoaded",()=>{
-
-const form =
-document.querySelector(".newsletter form");
-
-if(form){
-
-form.addEventListener("submit",(e)=>{
-
-e.preventDefault();
-
-alert(
-"Thank you for subscribing to SirWay!"
-);
-
-});
-
-}
-
-});
-
-// Smooth Scroll
-
-document.querySelectorAll('a[href^="#"]')
-.forEach(anchor=>{
-
-anchor.addEventListener('click',function(e){
-
-e.preventDefault();
-
-document.querySelector(
-this.getAttribute('href')
-).scrollIntoView({
-behavior:'smooth'
-});
-
-});
 
 });
