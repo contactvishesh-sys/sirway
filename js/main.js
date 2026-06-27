@@ -75,3 +75,49 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+/*=========================================
+    SCROLL REVEAL ANIMATION
+=========================================*/
+
+const revealElements = document.querySelectorAll(
+    ".collection-card, .category-card, .editor-card, .product, .brand-card, .trust-item"
+);
+
+function revealOnScroll() {
+
+    const triggerBottom = window.innerHeight * 0.85;
+
+    revealElements.forEach((element) => {
+
+        const boxTop = element.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+
+            element.classList.add("show");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+
+/*=========================================
+        HERO FADE ANIMATION
+=========================================*/
+
+const heroContent = document.querySelector(".hero-content");
+const heroImage = document.querySelector(".hero-image");
+
+window.addEventListener("load", () => {
+
+    heroContent.classList.add("show");
+
+    heroImage.classList.add("show");
+
+});
