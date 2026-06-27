@@ -262,3 +262,92 @@ circle.remove();
 });
 
 });
+
+/*=========================================
+        PAGE LOADER
+=========================================*/
+
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    if(loader){
+
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+
+            loader.style.display = "none";
+
+        },500);
+
+    }
+
+});
+
+
+/*=========================================
+        SCROLL PROGRESS
+=========================================*/
+
+const progressBar = document.getElementById("progress-bar");
+
+window.addEventListener("scroll", () => {
+
+    const scroll =
+        document.documentElement.scrollTop;
+
+    const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    progressBar.style.width =
+        (scroll / height) * 100 + "%";
+
+});
+
+
+/*=========================================
+        WISHLIST
+=========================================*/
+
+document.querySelectorAll(".wishlist-btn").forEach(btn=>{
+
+btn.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+const icon=btn.querySelector("i");
+
+icon.classList.toggle("fa-regular");
+
+icon.classList.toggle("fa-solid");
+
+icon.classList.toggle("active-heart");
+
+});
+
+});
+
+
+/*=========================================
+        DARK MODE
+=========================================*/
+
+const themeBtn=document.getElementById("theme-toggle");
+
+if(themeBtn){
+
+themeBtn.addEventListener("click",()=>{
+
+document.body.classList.toggle("dark-mode");
+
+const icon=themeBtn.querySelector("i");
+
+icon.classList.toggle("fa-moon");
+
+icon.classList.toggle("fa-sun");
+
+});
+
+}
