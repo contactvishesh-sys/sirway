@@ -1050,3 +1050,128 @@ Fade Animation
     }
 
 }
+
+/*=========================================
+        REVEAL ANIMATION
+=========================================*/
+
+.collection-card,
+.category-card,
+.editor-card,
+.product,
+.brand-card,
+.trust-item{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.collection-card.show,
+.category-card.show,
+.editor-card.show,
+.product.show,
+.brand-card.show,
+.trust-item.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*=========================================
+        HERO ANIMATION
+=========================================*/
+
+.hero-content,
+.hero-image{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all 1s ease;
+
+}
+
+.hero-content.show,
+.hero-image.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+        FLOATING CARDS
+=========================================*/
+
+.floating-card{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.card2{
+
+    animation-delay:.5s;
+
+}
+
+.card3{
+
+    animation-delay:1s;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.product{
+
+    transition:.4s;
+
+}
+
+.product:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.editor-card{
+
+    transition:.4s;
+
+}
+
+.editor-card:hover{
+
+    transform:translateY(-12px);
+
+}
