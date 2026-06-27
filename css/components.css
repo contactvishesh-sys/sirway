@@ -1,1 +1,216 @@
+/*=========================================
+        SIRWAY DESIGN SYSTEM v1.0
+==========================================*/
 
+/* ---------- COLORS ---------- */
+
+:root{
+
+    --primary:#7c3aed;
+    --secondary:#d067b5;
+
+    --dark:#2b2133;
+
+    --text:#666666;
+
+    --white:#ffffff;
+
+    --light:#faf7fb;
+
+    --border:#ebe5f4;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container{
+
+    width:min(1320px,92%);
+
+    margin:auto;
+
+}
+
+/* ---------- SECTION ---------- */
+
+.section{
+
+    padding:120px 0;
+
+}
+
+/* ---------- HEADING ---------- */
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    background:#f5effc;
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+.section-heading h2{
+
+    font-size:52px;
+
+    color:var(--dark);
+
+    margin-bottom:18px;
+
+}
+
+.section-heading p{
+
+    width:min(700px,100%);
+
+    margin:auto;
+
+    color:var(--text);
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+BUTTONS
+==========================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 40px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(124,58,237,.25);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 40px;
+
+    border:2px solid var(--primary);
+
+    border-radius:14px;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.rating{
+
+    color:#ffb400;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+.market-links{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.market-links a{
+
+    padding:10px 16px;
+
+    background:#f6effd;
+
+    border-radius:30px;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.market-links a:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
