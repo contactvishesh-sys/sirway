@@ -142,12 +142,12 @@ aria-hidden="true"></i>
     <i class="fa-solid fa-moon"></i>
 </button>
 
-<a href="#">
-    <i class="fa-regular fa-user"></i>
+<a href="#" aria-label="My Account">
+<i class="fa-regular fa-user" aria-hidden="true"></i>
 </a>
 
-<a href="#">
-    <i class="fa-solid fa-bag-shopping"></i>
+<a href="#" aria-label="Shopping Bag">
+<i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
 </a>
 
 </div>
@@ -580,7 +580,7 @@ Hand-picked styles loved by fashion enthusiasts.
 
             <a href="#" class="brand-card">
 
-                <img src="images/brands/hm.png" loading="lazy" alt="H&M">
+                <img src="images/brands/h&m.png" loading="lazy" alt="H&M">
 
             </a>
 
@@ -825,14 +825,15 @@ Hand-picked styles loved by fashion enthusiasts.
                 <h3>Become a Member</h3>
 
                 <input
-                    type="text"
-                    placeholder="Your Name"
-                >
+                 type="text"
+                 placeholder="Your Name"
+                 aria-label="Your Name"
+                 required>
 
-                <input
-                    type="email"
-                    placeholder="Email Address"
-                >
+                <input type="email"
+                 placeholder="Email Address"
+                 aria-label="Email Address" 
+                 required>
 
                 <button>
 
@@ -1150,13 +1151,32 @@ FEATURED PRODUCTS
 
             <div class="social-icons">
 
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"
+                 aria-label="Instagram">
+                 <i class="fab fa-instagram"
+                 aria-hidden="true"></i> 
+                 </a>
 
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
 
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"
+                 aria-label="Facebook">
+                 <i class="fab fa-facebook-f"
+                 aria-hidden="true"></i> 
+                 </a>
+
+                <a href="#"
+                 aria-label="Pinterest">
+                 <i class="fab fa-pinterest-p"
+                 aria-hidden="true"></i> 
+                 </a>
 
                 <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"
+                 aria-label="Youtube">
+                 <i class="fab fa-youtube"
+                 aria-hidden="true"></i> 
+                 </a>
 
             </div>
 
