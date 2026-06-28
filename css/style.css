@@ -884,7 +884,7 @@ FEATURED BRANDS
 ======================================*/
 
 .featured-brands{
-    padding:100px 0;
+    padding:80px 0;
     background:#ffffff;
 }
 
@@ -894,9 +894,9 @@ Brands Grid
 
 .brands-grid{
     display:grid;
-    grid-template-columns:repeat(6,1fr);
-    gap:25px;
-    align-items:center;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+    margin-top:50px;
 }
 
 /*==============================
@@ -904,18 +904,16 @@ Brand Card
 ==============================*/
 
 .brand-card{
-    height:130px;
-    background:#ffffff;
-    border-radius:22px;
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
     display:flex;
-    align-items:center;
     justify-content:center;
-    text-decoration:none;
-    box-shadow:0 12px 35px rgba(0,0,0,.06);
-    transition:all .35s ease;
-    border:1px solid #f1f1f1;
+    align-items:center;
+    height:140px;
+    border:1px solid #f0f0f0;
+    transition:.35s ease;
     overflow:hidden;
-    position:relative;
 }
 
 /*==============================
@@ -923,30 +921,25 @@ Brand Logo
 ==============================*/
 
 .brand-card img{
-    max-width:120px;
-    max-height:55px;
+    max-height:70px;
+    max-width:150px;
+    width:auto;
+    height:auto;
     object-fit:contain;
-    filter:grayscale(100%);
-    opacity:.75;
-    transition:all .4s ease;
+    transition:.3s;
 }
-
 /*==============================
 Hover
 ==============================*/
 
 .brand-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 45px rgba(139,92,246,.18);
-    border-color:#8B5CF6;
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
 .brand-card:hover img{
-    filter:grayscale(0%);
-    opacity:1;
-    transform:scale(1.08);
+    transform:scale(1.05);
 }
-
 /*==============================
 Gradient Shine
 ==============================*/
