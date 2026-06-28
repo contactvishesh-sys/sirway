@@ -49,12 +49,14 @@
     <meta property="og:image" content="images/logo/logo.png">
     <meta property="og:type" content="website">
 
-    <!-- Twitter ard -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SirWay">
     <meta name="twitter:description" content="Discover fashion from India's leading brands.">
     <meta name="twitter:image" content="images/logo/logo.png">
-
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
 </head>
 
 <body>
@@ -87,7 +89,7 @@
 
 <!-- Navigation -->
 
-<nav>
+<nav aria-label="Main Navigation">
 
 <ul class="nav-links">
 
@@ -118,8 +120,9 @@
 <i class="fa-solid fa-magnifying-glass"></i>
 
 <input
-type="text"
-placeholder="Search fashion, brands, shoes...">
+type="search"
+placeholder="Search fashion, brands, shoes..."
+aria-label="Search Products">
 
 </div>
 
@@ -127,8 +130,12 @@ placeholder="Search fashion, brands, shoes...">
 
 <div class="header-icons">
 
-<a href="#" class="wishlist-btn">
-    <i class="fa-regular fa-heart"></i>
+<a href="#"
+   aria-label="Wishlist">
+
+<i class="fa-regular fa-heart"
+aria-hidden="true"></i>
+
 </a>
 
 <button id="theme-toggle">
@@ -198,13 +205,17 @@ Shop smarter.
 
 <div class="hero-buttons">
 
-<a href="#" class="btn-primary">
+<a href="#"
+class="btn-primary"
+aria-label="Explore Fashion Collection">
 
 Explore Collection
 
 </a>
 
-<a href="#" class="btn-secondary">
+<a href="#"
+class="btn-secondary"
+aria-label="Today's Fashion Deals">
 
 Today's Deals
 
@@ -250,7 +261,8 @@ alt="Fashion Model">
 
 <div class="floating-card card1">
 
-<i class="fa-solid fa-fire"></i>
+<i class="fa-solid fa-fire"
+aria-hidden="true"></i>
 
 Trending
 
