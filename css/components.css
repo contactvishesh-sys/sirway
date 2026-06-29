@@ -1061,3 +1061,234 @@ Section Title
     letter-spacing:.5px;
 
 }
+
+/*======================================
+STEP 7 - PHASE 2
+MICRO INTERACTIONS
+======================================*/
+
+/*==============================
+PRIMARY BUTTON
+==============================*/
+
+.btn-primary,
+.btn-secondary{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-primary:active,
+.btn-secondary:active{
+    transform:scale(.97);
+}
+
+/* Shine Effect */
+
+.btn-primary::before,
+.btn-secondary::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:rgba(255,255,255,.35);
+    transform:skewX(-25deg);
+    transition:.6s;
+}
+
+.btn-primary:hover::before,
+.btn-secondary:hover::before{
+    left:150%;
+}
+
+/*==============================
+NAVIGATION LINKS
+==============================*/
+
+.nav-links a{
+
+    position:relative;
+
+    transition:.3s ease;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#7c3aed;
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+    color:#7c3aed;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* Active Link */
+
+.nav-links a.active{
+
+    color:#7c3aed;
+
+}
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+/*==============================
+HEADER ICONS
+==============================*/
+
+.header-icons a{
+
+    transition:.3s ease;
+
+}
+
+.header-icons a:hover{
+
+    color:#7c3aed;
+
+    transform:translateY(-4px) scale(1.12);
+
+}
+
+/*==============================
+SEARCH BOX
+==============================*/
+
+.search-box{
+
+    transition:.35s ease;
+
+}
+
+.search-box:hover{
+
+    box-shadow:0 10px 25px rgba(124,58,237,.15);
+
+}
+
+.search-box:focus-within{
+
+    border-color:#7c3aed;
+
+    box-shadow:0 0 0 4px rgba(124,58,237,.12);
+
+}
+
+/*==============================
+SHOP LINKS
+==============================*/
+
+.shop-links a{
+
+    transition:.3s;
+
+}
+
+.shop-links a:hover{
+
+    color:#7c3aed;
+
+    transform:translateY(-2px);
+
+}
+
+/*==============================
+SOCIAL ICONS
+==============================*/
+
+.social-icons a{
+
+    transition:.3s ease;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-5px) rotate(8deg);
+
+    color:#7c3aed;
+
+}
+
+/*==============================
+BACK TO TOP
+==============================*/
+
+.back-top{
+
+    transition:.35s ease;
+
+}
+
+.back-top:hover{
+
+    transform:translateY(-4px);
+
+    letter-spacing:.5px;
+
+}
+
+/*==============================
+INPUTS
+==============================*/
+
+input{
+
+    transition:.3s ease;
+
+}
+
+input:focus{
+
+    transform:translateY(-2px);
+
+}
+
+/*==============================
+LOGO
+==============================*/
+
+.logo img{
+
+    transition:.35s ease;
+
+}
+
+.logo:hover img{
+
+    transform:scale(1.06);
+
+}
