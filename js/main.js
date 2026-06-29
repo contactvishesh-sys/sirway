@@ -393,20 +393,20 @@ console.log("SirWay v1 Loaded Successfully");
 
 /*=====================================
 STEP 7 - PHASE 3
-SCROLL REVEAL
-=====================================*/
+        SCROLL REVEAL
+=========================================*/
 
 const reveals = document.querySelectorAll(".reveal");
 
-function scrollReveal(){
+function scrollReveal() {
 
-    const windowHeight = window.innerHeight;
+    const triggerBottom = window.innerHeight - 120;
 
-    reveals.forEach(item=>{
+    reveals.forEach((item) => {
 
         const top = item.getBoundingClientRect().top;
 
-        if(top < windowHeight - 120){
+        if (top < triggerBottom) {
 
             item.classList.add("active");
 
@@ -416,6 +416,7 @@ function scrollReveal(){
 
 }
 
-window.addEventListener("scroll",scrollReveal);
+window.addEventListener("scroll", scrollReveal);
+window.addEventListener("load", scrollReveal);
 
-window.addEventListener("load",scrollReveal);
+console.log("SirWay v1 Loaded Successfully");
