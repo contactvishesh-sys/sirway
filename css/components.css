@@ -654,6 +654,38 @@ BRAND CARD
 
 }
 
+/*=====================================
+Premium Hover Glow
+=====================================*/
+
+.brand-card{
+    position:relative;
+}
+
+.brand-card::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(124,58,237,.04),
+        rgba(236,72,153,.03)
+    );
+
+    opacity:0;
+    transition:.4s ease;
+
+    pointer-events:none;
+}
+
+.brand-card:hover::before{
+
+    opacity:1;
+
+}
+
 .brand-card img{
 
     max-width:120px;
