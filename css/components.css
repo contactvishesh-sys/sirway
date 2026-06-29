@@ -1400,3 +1400,72 @@ PREMIUM BUTTON GRADIENT
     color:#fff;
 
 }
+
+/*======================================
+STEP 7 - PHASE 6
+GLASSMORPHISM + PREMIUM UI
+======================================*/
+
+/* Premium Card */
+
+.collection-card,
+.category-card,
+.brand-card,
+.editor-card,
+.product,
+.story-card{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.45s ease;
+
+}
+
+/* Premium Hover */
+
+.collection-card:hover,
+.category-card:hover,
+.brand-card:hover,
+.editor-card:hover,
+.product:hover,
+.story-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 30px 60px rgba(0,0,0,.10),
+
+    0 12px 25px rgba(124,58,237,.10);
+
+}
+
+/* Image Zoom */
+
+.collection-card img,
+.category-card img,
+.product-image img,
+.editor-card img{
+
+    transition:.5s ease;
+
+}
+
+.collection-card:hover img,
+.category-card:hover img,
+.product:hover img,
+.editor-card:hover img{
+
+    transform:scale(1.06);
+
+}
