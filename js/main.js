@@ -104,7 +104,7 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 
-revealOnScroll();
+
 
 
 /*=========================================
