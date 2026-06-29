@@ -84,7 +84,7 @@ const revealElements = document.querySelectorAll(
     ".collection-card, .category-card, .editor-card, .product, .brand-card, .trust-item"
 );
 
-function scrollReveal() {
+function revealOnScroll() {
 
     const triggerBottom = window.innerHeight * 0.85;
 
@@ -102,7 +102,7 @@ function scrollReveal() {
 
 }
 
-window.addEventListener("scroll", scrollReveal);
+window.addEventListener("scroll", revealOnScroll);
 
 
 
