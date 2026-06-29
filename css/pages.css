@@ -498,3 +498,105 @@ FOOTER
     align-items:center;
 
 }
+
+/*======================================
+STEP 7 - PHASE 4
+PREMIUM GRADIENTS
+======================================*/
+
+/* Hero Background */
+
+.hero{
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(124,58,237,.10),
+    transparent 35%),
+
+    radial-gradient(circle at bottom left,
+    rgba(236,72,153,.08),
+    transparent 35%),
+
+    #faf8ff;
+
+}
+
+/* Trending */
+
+.trending{
+
+    background:#ffffff;
+
+}
+
+/* Categories */
+
+.categories{
+
+    background:#fcfbff;
+
+}
+
+/* Featured Brands */
+
+.featured-brands{
+
+    background:linear-gradient(
+        180deg,
+        #ffffff,
+        #faf7ff
+    );
+
+}
+
+/* Editor's Choice */
+
+.editors-choice{
+
+    background:#ffffff;
+
+}
+
+/* SirWay Club */
+
+.sirway-club{
+
+    background:linear-gradient(
+        135deg,
+        #6d28d9,
+        #8b5cf6,
+        #a855f7
+    );
+
+    color:#fff;
+
+}
+
+.sirway-club h2,
+.sirway-club p,
+.sirway-club h3,
+.sirway-club div{
+
+    color:#fff;
+
+}
+
+/* Featured Products */
+
+.featured-products{
+
+    background:#fafafa;
+
+}
+
+/* Footer */
+
+.footer{
+
+    background:linear-gradient(
+        180deg,
+        #18181b,
+        #111827
+    );
+
+}
