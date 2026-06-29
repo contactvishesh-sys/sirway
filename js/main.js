@@ -420,3 +420,37 @@ window.addEventListener("scroll", scrollReveal);
 window.addEventListener("load", scrollReveal);
 
 console.log("SirWay v1 Loaded Successfully");
+
+/*=========================================
+BUTTON RIPPLE EFFECT
+=========================================*/
+
+const buttons = document.querySelectorAll(
+".btn-primary, .btn-secondary, .buy-btn"
+);
+
+buttons.forEach(button=>{
+
+    button.addEventListener("click",function(e){
+
+        const ripple=document.createElement("span");
+
+        ripple.classList.add("ripple");
+
+        const rect=this.getBoundingClientRect();
+
+        ripple.style.left=(e.clientX-rect.left)+"px";
+
+        ripple.style.top=(e.clientY-rect.top)+"px";
+
+        this.appendChild(ripple);
+
+        setTimeout(()=>{
+
+            ripple.remove();
+
+        },600);
+
+    });
+
+});
