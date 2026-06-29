@@ -1519,3 +1519,23 @@ body{
     text-rendering:optimizeLegibility;
 
 }
+
+/*======================================
+PREMIUM SHADOW SYSTEM
+======================================*/
+
+:root{
+
+    --shadow-sm:
+    0 5px 15px rgba(0,0,0,.05);
+
+    --shadow-md:
+    0 12px 30px rgba(0,0,0,.08);
+
+    --shadow-lg:
+    0 25px 55px rgba(0,0,0,.10);
+
+    --shadow-purple:
+    0 18px 40px rgba(124,58,237,.15);
+
+}
