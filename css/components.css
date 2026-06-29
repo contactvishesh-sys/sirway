@@ -857,3 +857,207 @@ BUY BUTTON
     background:#6D28D9;
 
 }
+/*======================================
+PREMIUM HOVER EFFECTS
+======================================*/
+
+/* Global Transition */
+
+.collection-card,
+.category-card,
+.brand-card,
+.editor-card,
+.product,
+.story-card,
+.feature-story,
+.floating-card,
+.btn-primary,
+.btn-secondary{
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background .35s ease;
+}
+
+/*==============================
+Collection Cards
+==============================*/
+
+.collection-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+/* Zoom image */
+
+.collection-card img{
+    transition:transform .6s ease;
+}
+
+.collection-card:hover img{
+    transform:scale(1.08);
+}
+
+/*==============================
+Category Cards
+==============================*/
+
+.category-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 16px 35px rgba(0,0,0,.10);
+}
+
+.category-card img{
+    transition:transform .6s ease;
+}
+
+.category-card:hover img{
+    transform:scale(1.06);
+}
+
+/*==============================
+Brand Cards
+==============================*/
+
+.brand-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(124,58,237,.15);
+
+    border-color:#c4b5fd;
+
+}
+
+.brand-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==============================
+Editor's Choice
+==============================*/
+
+.editor-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.editor-card img{
+
+    transition:transform .6s ease;
+
+}
+
+.editor-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==============================
+Products
+==============================*/
+
+.product:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.product-image{
+
+    overflow:hidden;
+
+}
+
+.product-image img{
+
+    transition:transform .6s ease;
+
+}
+
+.product:hover .product-image img{
+
+    transform:scale(1.08);
+
+}
+
+/*==============================
+Story Cards
+==============================*/
+
+.story-card:hover{
+
+    transform:translateX(8px);
+
+}
+
+.story-card img{
+
+    transition:transform .5s ease;
+
+}
+
+.story-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==============================
+Feature Story
+==============================*/
+
+.feature-story:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.feature-story img{
+
+    transition:transform .7s ease;
+
+}
+
+.feature-story:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*==============================
+Floating Cards
+==============================*/
+
+.floating-card:hover{
+
+    transform:translateY(-8px) scale(1.05);
+
+}
+
+/*==============================
+Section Title
+==============================*/
+
+.section-title h2{
+
+    transition:.3s;
+
+}
+
+.section-title:hover h2{
+
+    letter-spacing:.5px;
+
+}
