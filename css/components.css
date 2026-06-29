@@ -676,6 +676,38 @@ BRAND CARD
 
 }
 
+.brand-card{
+
+    position:relative;
+
+}
+
+.brand-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(124,58,237,.04),
+        rgba(236,72,153,.03)
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.brand-card:hover::before{
+
+    opacity:1;
+
+}
+
 
 /*======================================================
 EDITOR CARD
@@ -757,6 +789,36 @@ PRODUCT CARD
     transition:.35s;
 
     box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.product{
+
+    position:relative;
+
+}
+
+.product::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:24px;
+
+    border:1px solid transparent;
+
+    pointer-events:none;
+
+    transition:.4s;
+
+}
+
+.product:hover::after{
+
+    border-color:rgba(124,58,237,.20);
 
 }
 
