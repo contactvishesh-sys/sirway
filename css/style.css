@@ -1539,3 +1539,14 @@ PREMIUM SHADOW SYSTEM
     0 18px 40px rgba(124,58,237,.15);
 
 }
+/*======================================
+PREMIUM SECTION LAYOUT
+======================================*/
+
+section{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
