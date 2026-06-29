@@ -1345,3 +1345,47 @@ SCROLL REVEAL ANIMATION
     transition-delay:.6s;
 
 }
+
+/*======================================
+PREMIUM BUTTON GRADIENT
+======================================*/
+
+.btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        #7c3aed,
+        #9333ea
+    );
+
+    color:#fff;
+
+    box-shadow:
+    0 12px 30px rgba(124,58,237,.25);
+
+}
+
+.btn-primary:hover{
+
+    box-shadow:
+    0 18px 40px rgba(124,58,237,.35);
+
+}
+
+.btn-secondary{
+
+    background:#fff;
+
+    border:2px solid #7c3aed;
+
+    color:#7c3aed;
+
+}
+
+.btn-secondary:hover{
+
+    background:#7c3aed;
+
+    color:#fff;
+
+}
