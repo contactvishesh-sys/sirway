@@ -84,7 +84,7 @@ const revealElements = document.querySelectorAll(
     ".collection-card, .category-card, .editor-card, .product, .brand-card, .trust-item"
 );
 
-function revealOnScroll() {
+function scrollReveal() {
 
     const triggerBottom = window.innerHeight * 0.85;
 
@@ -102,7 +102,7 @@ function revealOnScroll() {
 
 }
 
-window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("scroll", scrollReveal);
 
 
 
@@ -398,7 +398,7 @@ SCROLL REVEAL
 
 const reveals = document.querySelectorAll(".reveal");
 
-function revealOnScroll(){
+function scrollReveal(){
 
     const windowHeight = window.innerHeight;
 
@@ -416,6 +416,6 @@ function revealOnScroll(){
 
 }
 
-window.addEventListener("scroll",revealOnScroll);
+window.addEventListener("scroll",scrollReveal);
 
-window.addEventListener("load",revealOnScroll);
+window.addEventListener("load",scrollReveal);
